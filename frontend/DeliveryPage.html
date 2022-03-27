@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <link rel = "icon" href = "https://i.pinimg.com/originals/b9/f3/79/b9f379dc190685c443ac37fdfee6a5dc.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./lstyles/DeliveryPage.css">
+    <title>Snapdeal Cart Checkout</title>
+</head>
+<body>
+    <div id="kjheader"> 
+        <div> 
+            <div id="kjLogoDiv"> 
+                <a href="home.html"> 
+                   <img src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg" alt="">
+                </a>
+               </div>
+               <div id="kjHeaderText"> 
+                   <a href=""> 
+                       <p>100% Payment Protection,Easy Returns Policy</p>
+                   </a>
+               </div>
+        </div>
+    </div>
+
+    <div id="KjcheckoutDiv"> 
+        <div id="KjcheckoutDivFrist"> 
+            <div id="KjInsideDiv_KjcheckoutDivFrist"> 
+                <div id="kjloginDiv"> 
+                    <div id="kjloginDivInside"> 
+                        <div> 
+                            <p>1.LOGIN</p>
+                        </div>
+                        <div> 
+                            <p id="Kjemail">Kamleshjadhav4393@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+            <div id="kjBelowLoginDiv"> 
+                <div id="KjDelivery_Address"> 
+                    <p>2. Delivery Address</p>
+                </div>
+
+                <div class="kjpincodeDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="pincode"> <p>Pincode</p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="6 Digit Pincode" maxlength="6" id="pincode" required>
+                    </div>
+                </div>
+
+                <div class="kjpincodeDiv" id="kjnamediv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="Name"> <p>Name</p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="Full Name"  id="Name" required>
+                    </div>
+                </div>
+
+                <div class="kjpincodeDiv" id="kjAdressDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="Address"> <p> Address </p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="Flat/House No. Colony/Street No."  id="Address" required>
+                    </div>
+                </div>
+
+                <div  class="kjpincodeDiv" id="kjLocalityDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="Locality"> <p> Locality/Landmark </p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="Eg.Near Apollo Hospital"  id="Locality">
+                    </div>
+                    <div class="help-tip">
+                        <p>A Locality/landmark helps us in locating your addres better.please specify a well know place near your address like theater,mall,square,petrol pump etc..</p>
+                    </div> 
+                </div>
+
+                <div class="kjpincodeDiv" id="kjCityDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="City"> <p> City </p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="City"  id="City" required>
+                    </div>
+                </div>      
+                
+                <div class="kjpincodeDiv" id="kjStateDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="State"> <p> State </p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="State"  id="State" required>
+                    </div>
+                </div>   
+
+                <div class="kjpincodeDiv" id="kjMobileDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="Mobile"> <p> Mobile Number </p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="10 Digit Mobile Number"  id="Mobile" required>
+                    </div>
+                    <div class="help-tip">
+                        <p>Please Entre A Valid 10-Digit Mobile Number Without Any Prefixes,Spaces And Dashes</p>
+                    </div> 
+                </div> 
+
+                <div class="kjpincodeDiv" id="kjAMobileDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="AMobile"> <p> Alternate Mobile</p> </label>
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <input type="text" placeholder="10 Digit Mobile Number"  id="AMobile">
+                    </div>
+                    <div class="help-tip">
+                        <p>Alternate Number Will Help Us To Connect In Case Your Primary Mobile Is Not Reachable</p>
+                    </div> 
+                </div> 
+
+                <div class="kjpincodeDiv" id="kjAddtypeDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                        <label for="AMobile"> <p> Address Type </p> </label>
+                    </div>
+                    <div class="kjinputDiv" style="display: flex; width: 250px;"> 
+                        <input type="radio" id="Homepersonal" name="Addres" style="margin-left: -10px;">
+                        <label for="Homepersonal" style="font-size: 12px; margin-top: 3px;">Home/Personal</label>
+                        <input type="radio" id="OfficeCommercial" name="Addres">
+                        <label for="OfficeCommercial" style="font-size: 12px; margin-top: 3px;">Office/Commercial</label>
+                    </div>
+                </div> 
+
+                <div id="kjDefaultAddress">
+                    <input type="radio" id="DefaultAddress" name="Default">
+                    <label for="Default" style="font-size: 12px;">Make This My Default Address</label>
+                </div>
+
+                <div class="kjpincodeDiv" id="kjSubmitButtonDiv"> 
+                    <div class="kjtextofinuptDiv"> 
+                    </div>
+                    <div class="kjinputDiv"> 
+                        <button id="kjSaveAndContinue">SAVE AND CONTINUE</button>
+                    </div>
+                </div> 
+            </div>
+
+            <div id="kjrevieworder"> 
+                <p>3.REVIEW ORDER</p>
+            </div>
+            <div id="kjMakePayment"> 
+                <P>4.MAKE PAYMENT</P>
+            </div>
+
+
+        </div>
+        </div>
+
+        <!-- <--------------------------------------------------------------------------------------------------------> -->
+        <div id="KjcheckoutDivSecond"> 
+            <div id="kjinsideof_KjcheckoutDivSecond">
+                <div id="kjsummaryDiv"> 
+                <p>Summary <span><p> (<span id="link-item">1</span> item) </p></span></p>
+            </div>
+            <div id="lallproductscart"></div>
+            <!-- <div id="kjproductname" style="border:ipx solid red"> 
+              <p>Veirdo 100 percent cotten green color black t-shirt</p>
+            </div>
+            <div id="kjquantityDiv" style="border:ipx solid red"> 
+                <div> 
+                   <p id="kjQuantityText">Quantity: <span><p id="kjQuantityTextNumber">1</p></span></p>
+                </div>
+                <div> 
+                    <p id="kjpricetext">Rs: <span><p id="kjpricetexttext">319</p></span></p>
+                </div>  
+            </div> -->
+            <hr id="kjHrline">
+            <div id="kjTotalDiv"> 
+                <div> 
+                   <p id="kjTotalText">Total:</p>
+                </div>
+                <div> 
+                    <p id="kjTotaltrsext">Rs: <span><p id="kjTotalnumbertext">319</p></span></p>
+                </div>  
+            </div>
+            <div id="KjdeliveryCharges">
+                 <p>delivery Charges:</p>
+                 <p id="KjdeliveryChargePrice">Free</p>
+            </div>
+            <hr>
+            <div id="kjyoupay"> 
+                <div> 
+                <p style="color: #a19d9d;">You Pay</p>
+                </div>
+                <div> 
+                <p>RS:<span id="lyouPay">319</span></p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script> 
+// <--------------------------------emailaddress-------------------->
+var ShowEmailAddrees = document.getElementById("Kjemail")
+
+var user = JSON.parse(localStorage.getItem("userData"))
+// var regdUsers = JSON.parse(localStorage.getItem("userDatabase"));
+ShowEmailAddrees.innerText = user.user.email
+// <--------------------------------emailaddress-------------------->
+allItemsInCart()
+async function allItemsInCart(){
+    try{
+        let response = await fetch(`http://localhost:9345/carts/${user.user._id}`,{
+            method:"GET",
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        let data = await response.json()
+        document.getElementById("link-item").innerHTML = data[0].productIds.length
+        let bag = ""
+        let body = document.getElementById("lallproductscart")
+        data[0].productIds.map((ele)=>{
+            let div = document.createElement("div")
+
+            let name = document.createElement("div")
+            name.setAttribute("id","kjproductname")
+            let paraname = document.createElement("p")
+            if(ele.tilte==undefined) ele.tilte = ele.title
+            paraname.innerHTML = ele.tilte
+            name.append(paraname)
+            let quantDiv = document.createElement("div")
+            quantDiv.setAttribute("id","kjquantityDiv")
+            let quantDivDiv = document.createElement("div")
+            let quntname = document.createElement("p")
+            quntname.setAttribute("id","kjQuantityText")
+            if(ele.count==undefined) ele.count = 1
+            quntname.innerHTML = "Quantity: "+ele.count
+            quantDivDiv.append(quntname)
+            let priceTextDiv = document.createElement("div")
+            let priceText = document.createElement("p")
+            priceText.innerHTML = "Rs:"+ele.price
+            priceText.setAttribute("id","kjpricetext")
+            priceTextDiv.append(priceText)
+            quantDiv.append(quantDivDiv,priceTextDiv)
+            div.append(name,quantDiv)
+            body.append(div)
+        })
+    } catch(err){
+        console.log(err.message)
+    }
+}
+document.getElementById("kjTotalnumbertext").innerHTML = user.totalPrice
+
+document.getElementById("lyouPay").innerHTML = user.totalPrice
+
+document.getElementById("kjSaveAndContinue").onclick = ()=>{
+    let input = document.getElementsByTagName("input")
+    for(let i = 0;i<input.length;i++){
+        if(!input[i].value && input[i].required){
+            alert(`${input[i].placeholder} is required`)
+            return;
+        }
+        else{
+            window.location.href = "payment.html"
+        }
+    }
+}
+
+</script>

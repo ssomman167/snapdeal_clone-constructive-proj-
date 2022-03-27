@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "https://i.pinimg.com/originals/b9/f3/79/b9f379dc190685c443ac37fdfee6a5dc.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./lstyles/indivisualProduct.css"/>
+    <link rel="stylesheet" href="./vstyle/headerfooter.css">
+    <link rel="stylesheet" href="./sstyle/signup.css">
+</head>
+<body>
+    <div id="lnavbar"></div>
+    <div class="lbar" style="margin-top: 10px;"><p>Home > Boxing Day Upto 70% > <span id="lproName"></span></p></div>
+    <div class="lmainContainer">
+        <div id="limgContainer"></div>
+        <div id="linfoContainer">
+            <div id="linfo">
+                <h2 id="lname"></h2>
+                <p id="lin"></p>
+                <p><span id="lprice"></span><span id="lorgPrice"></span><span id="loff"></span></p>
+                <p>or 4 interest-free payments of <b>₹110.00</b> with</p>
+                <p>Tax included.</p>
+                <span>
+                    <i class="fab fa-facebook-f" id="lLogo"></i>
+                    <i class="fab fa-twitter" id="lLogo"></i>
+                    <i class="fab fa-whatsapp" id="lLogo"></i>
+                </span>
+            </div>
+            <div id="lsize">
+                <span><b>SIZE: <span id="lno_size"></span></b></span><br>
+                <button id="lsizeButton" class="s24" value="24">24</button>
+                <button id="lsizeButton" class="s26" value="26">26</button>
+                <button id="lsizeButton" class="s28" value="28">28</button>
+                <button id="lsizeButton" class="s30" value="30">30</button>
+                <button id="lsizeButton" class="s32" value="32">32</button>
+                <button id="lsizeButton" class="s34" value="34">34</button>
+            </div>
+            <div id="lcolor">
+                <span><b>COLOR: <span id="lno_col"></span></b></span><br>
+                <div id="lcolDiv">
+                    <div id="lcol"></div>
+                </div>
+            </div>
+            <div id="lbutton">
+                <button id="lbuy">BUY IT NOW</button>
+                <button id="lcart">ADD TO CART</button>
+                <button id="laddFav"><i class="fas fa-heart ladd"></i></button>
+            </div>
+            <div id="loffer">
+                <h2>OFFER</h2>
+                <p style="font-size: 15px;">Get <span style="color: red;">5% instant discount</span> on all prepaid orders. Use Code <span style="color: red;">PREPAID.</span>
+                    Offer applicable over and above promotional T&C
+                </p>
+            </div>
+            <p><b>Availability</b> :In Stock</p>
+        </div>
+    </div>
+    <div id="vmainprod">
+        <div class="vleft">
+            <h2>Product Details</h2>
+            <div class="vgrey">
+                <div class="vleft11">
+                    <div class="vborder"><h3>Info & Care</h3></div>
+                    <div><h3>Delivery & Return</h3></div>
+                    <div><h3>Seller Details</h3></div>
+                </div>
+                <h3>Product ID : <span class="vsize3">138466</span></h3>
+                <h3>Line ID : <span class="vsize3">155457</span></h3>
+                <h3>Material/Fabric : <span class="vsize3">100% Cotton</span></h3>
+                <h3>Size & Fit : <span class="vsize3">This brand runs true to size. To ensure the best fit, we suggest consulting the size chart.
+                    <b>Casual Shirt</b> by <b>BLUE SAINT</b></span></h3>
+                <ul class="vseprate">
+                    <li>Made from cotton</li>
+                    <li>Mandarin collar</li>
+                    <li>Button-down closure</li>
+                    <li>Welt pocket front</li>
+                    <li>Long sleeves</li>
+                    <li>Curved hem</li>
+                    <li>Slim fit</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vright">
+            <h2>Delivery Option</h2>
+            <div class="vgrey">
+                <h4>Pincode</h4>
+                <input class="vinput" type="text" placeholder="Postal Code e.g.414001"><button class="vbutton11">Check</button>
+                <p class="vdot">The Product maybe applicable for free Delivery</p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="lfooter"></div>
+</body>
+</html>
+<script src="indivisualProduct.js"></script>
+<script src="https://kit.fontawesome.com/683b4b40e3.js" 	crossorigin="anonymous"></script>
+<!-- <script src="footer.js"></script> -->
+<script type="module">
+    import {Header,Footerone,FooterSecond} from "./component/header.js"
+    document.getElementById("lnavbar").innerHTML = Header()
+    document.getElementById("lfooter").innerHTML = Footerone()
+    let user = JSON.parse(localStorage.getItem("userData"))
+    showUser()
+    function showUser(){
+        let userData = JSON.parse(localStorage.getItem("userData")) || null;
+        if(userData){
+            document.getElementById("luser_name").innerHTML = userData.user.email.split("@")[0]
+            document.getElementById("lregister").innerHTML = null
+            document.getElementById("llogin").style.display="none"
+            document.getElementById("llogout").style.display="block"
+            document.getElementById("llogout").style.height="30%"
+        }
+    }
+    document.getElementById("lcart").addEventListener("click",addItemToCart);
+// let carr= []
+async function addItemToCart(){
+    if(user==null){
+        alert("Please Login your account")
+        return;
+    }
+    try{
+        let cartdata = {
+            productIds:[arr._id],
+            userId:user.user._id
+        }
+        let response = await fetch(`http://localhost:9345/carts/${arr._id}/${user.user._id}`,{
+            method:"POST",
+            body:JSON.stringify(cartdata),
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        let data = await response.json()
+    } catch(err){
+        console.log(err.message)
+    }
+}
+
+document.getElementById("lbuy").addEventListener("click",buyNow);
+function buyNow(){
+    if(user==null){
+        alert("Please Login your account")
+        return;
+    }
+    addItemToCart()
+    window.location.href="ogcart.html";
+}
+</script>

@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 12px;
+    font-family: sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+body {
+    background-color: #f7f7f7;
+
+}
+
+#container {
+    display: flex;
+
+    gap: 15px;
+    width: 88%;
+    margin: auto;
+    margin-top: 20px;
+
+
+    margin-bottom: 50px;
+}
+
+
+#container>:nth-child(1) {
+    flex: 3;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    background-color: white;
+}
+
+#container>:nth-child(2) {
+    flex: 17;
+
+
+}
+
+#rightupperdiv {
+    display: flex;
+
+    gap: 15px;
+}
+
+#rightupperdiv>:nth-child(1) {
+    flex: 12;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+#rightupperdiv>:nth-child(2) {
+    flex: 4;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+
+}
+
+#carouselExampleControls {
+    width: 100%;
+
+
+}
+
+#imageslider {
+    width: 100%;
+
+}
+
+#imageslider>div>img {
+    width: 100%;
+    height: 282px;
+    border-radius: 5px 5px 0 0;
+}
+
+#imageslider>div>div {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+#imageslider>div>div>div {
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+
+
+
+.headingleft {
+    padding-left: 12px;
+
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+
+#leftupper>div {
+    height: 42px;
+
+
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+#leftupper>div>img {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#leftlower>div,
+#leftmiddle>div {
+    height: 30px;
+
+
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+
+
+
+
+#leftupper>div:hover,
+#leftmiddle>div:hover {
+    border: 1.5px solid rgba(100, 100, 111, 0.4);
+    border-right: none;
+    border-left: 2px solid red;
+    border-radius: 3px;
+    margin-left: 4px;
+
+}
+
+#rightpin {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+
+#rightpin>div {
+
+    text-align: center;
+}
+
+#rightpin>:nth-child(n) {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#rightpin>:nth-child(1) {
+    height: 55%;
+
+}
+
+#rightpin>:nth-child(1)>img {
+    height: 80%;
+}
+
+#rightpin>:nth-child(1)>hr {
+    margin: 10px 100px 0 100px;
+
+}
+
+#rightpin>:nth-child(2)>input {
+    height: 35px;
+    width: 95%;
+    color: rgba(100, 100, 111, 0.5);
+    border: 1px solid rgba(100, 100, 111, 0.2);
+    border-radius: 5px;
+}
+
+#rightpin>:nth-child(3)>:nth-child(n) {
+    height: 35px;
+    font-size: 14;
+    border: none;
+}
+
+#rightpin>:nth-child(3)>:nth-child(1) {
+    width: 60%;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 5px;
+
+}
+
+#rightpin>:nth-child(3)>:nth-child(2) {
+    width: 27%;
+    background-color: rgba(100, 100, 111, 0.2);
+    color: rgba(100, 100, 111, 0.4);
+    border-radius: 5px;
+
+
+}
+
+#mdropdown,
+#wdropdown,
+#tdropdown,
+#hdropdown,
+#hedropdown {
+    height: 620px;
+    width: 910px;
+    /* border: 1px solid red; */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    top: 104px;
+    /* to adjust position of dropdown div */
+    left: 290px;
+
+    display: none;
+
+
+}
+
+/* 
+#wdropdown {
+    display: flex;
+} */
+
+#mdropdown>div,
+#wdropdown>div,
+#hdropdown>div,
+#tdropdown>div,
+#hedropdown>div {
+    flex: 1;
+    /* border: 1px solid black; */
+}
+
+
+.vopen {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.vopen>div {
+
+    height: 23px;
+
+    color: rgba(100, 100, 111, 0.8);
+}
+
+.vopen>div:hover {
+    color: rgb(71, 69, 69);
+    font-size: 13px;
+}
+
+.vopen>:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: rgb(71, 69, 69);
+    font-weight: 600;
+}
+
+.vopen>:nth-last-child(1) {
+    color: #25a8ed;
+
+}
+
+
+#men:hover #mdropdown,
+#women:hover #wdropdown,
+#toy:hover #tdropdown,
+#home:hover #hdropdown,
+#health:hover #hedropdown {
+
+    display: flex;
+
+}
+
+#leftupper>div:hover {
+    width: 900px;
+
+}
+
+
+
+
+
+
+
+
+
+
+#rightlowerdiv {
+
+    margin-top: 20px;
+    display: flex;
+
+    width: 1423px;
+
+    overflow-x: hidden;
+    overflow-x: scroll;
+    /* border: 1px solid red; */
+}
+
+#vimgDiv {
+    width: 210px;
+    height: 260px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+
+}
+
+#vimgDiv>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#vinfoDiv {
+    /* line-height: 16px; */
+    padding: 2px;
+    padding-top: 8px;
+}
+
+#vinfoDiv>p:nth-child(1) {
+    font-size: 15px;
+    color: rgb(90, 89, 89);
+    /* border: 1px solid red; */
+}
+
+#vpricon {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#vpricon>:nth-last-child(1) {
+    color: rgb(90, 89, 89);
+    border: 1px solid rgb(90, 89, 89);
+    ;
+}
+
+#vpricon>div>:nth-child(1) {
+    /* border: 1px solid red; */
+    text-decoration: line-through;
+    color: rgb(90, 89, 89);
+    margin-right: 10px;
+
+}
+
+
+
+#vwishList {
+    text-align: right;
+    font-size: 17px;
+}
+
+#vinprice {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* #lstar{
+display: none;
+} */
+#vinProduct {
+    padding: 10px;
+
+    background-color: white;
+    /* border: 1px solid red; */
+
+
+}
+
+#vinProduct:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+
+
+#containermiddle {
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2%;
+
+    margin-bottom: 160px;
+}
+

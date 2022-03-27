@@ -1,0 +1,414 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #eeeeee;
+}
+#kjheader{
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    background-color: #e40046;
+    display: flex;
+    align-items: center;
+}
+#kjheader > div{
+    height: 50%;
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+#kjLogoDiv{
+    height: 100%;
+    width: 12%;
+    /* border: 1px solid black; */
+}
+#kjHeaderText{
+    height: 100%;
+    width: 22%;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+#kjHeaderText > a {
+    text-decoration: none;
+}
+#kjHeaderText > a > p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+#KjcheckoutDiv{
+   position: relative;
+    width: 95%;
+    height: 1000px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #f9fafb;
+    margin-top: -20px;
+}
+#KjcheckoutDivFrist{
+    width: 75%;
+    height: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    background-color: #ffffff;
+    border-top-left-radius: 10px;
+
+}
+#KjcheckoutDivSecond{
+    width: 23.5%;
+    height: 300px;
+    right: 2.5%;
+    position: fixed;
+    /* border: 1px solid black; */
+    margin-top: 0px;
+}
+#KjInsideDiv_KjcheckoutDivFrist{
+    height: 95%;
+    width: 95%;
+    /* border: 1px solid black; */
+    margin: 2.5%;
+
+}
+#kjloginDiv{
+    height: 6%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+}
+#kjloginDivInside{
+    height: 80%;
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #666666;
+    font-size: 13px;
+}
+#kjloginDivInside > div:nth-child(1){
+    margin-left: 50px;
+}
+#kjBelowLoginDiv{
+    height: 70%;
+    width: 100%;
+    margin-top: 5px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#KjDelivery_Address{
+    height: 9%;
+    width: 100%;
+    /* margin-top: 5px; */
+    /* border: 1px solid gray; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+}
+#KjDelivery_Address > p{
+    margin-left: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.kjpincodeDiv{
+    height: 7%;
+    width: 60%;
+    /* border: 1px solid black; */
+    margin-top: 15px;
+    margin-left: 45px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.kjpincodeDiv > div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 40%;
+}
+.kjinputDiv > input{
+    box-sizing: border-box;
+    padding: 4%;
+    width: 270px;
+    /* margin-left: 50px; */
+    border: none;
+    /* border: 1px solid #e2e2e2; */
+    border: 1px solid #ccc;
+
+}
+.kjtextofinuptDiv > label > p{
+    color: #666666;
+    font-size: 14px;
+}
+.kjinputDiv > input::placeholder{
+    font-size: 13px;    
+    color: rgb(155, 151, 151);    
+}
+input[type=text]:focus {
+    outline: none;
+  border: 1px solid #555;
+}
+#kjnamediv{
+    margin-top: 5px;
+}
+#kjAdressDiv{
+    margin-top: 5px;
+}
+#kjLocalityDiv{
+    margin-top: 5px;
+}
+
+
+/* <-------------------------------------------------> */
+
+.kjQuestionmarkDiv{
+    height: 30%;
+    width: 3%;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+.help-tip{
+    /* position: absolute; */
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    border: 0.2px solid #555;
+    font-size: 10px;
+    /* line-height: 16px; */
+    cursor: default;
+    margin-left: 20px;
+   /* backface-visibility: hidden; */
+
+}
+
+.help-tip:before{
+    content:'?';
+    /* font-weight: bold; */
+    color:#555;
+  
+}
+
+.help-tip:hover p{
+    display:block;
+   /* backface-visibility: hidden; */
+
+}
+
+.help-tip > p {    /* The tooltip */
+    display: none;
+    text-align: left;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: rgb(155, 151, 151);
+    font-size: 12px;
+    line-height: 1.4;
+    /* visibility: visible; */
+    /* z-index: 2; */
+   /* backface-visibility: hidden; */
+
+}
+
+.help-tip > p:before { /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    border:6px solid transparent;
+    border-bottom-color: #ccc;
+    left:0px;
+    top:-12px;
+}
+
+/* <-------------------------------------------------------------------> */
+
+#kjCityDiv{
+    margin-top: 5px;
+}
+#kjStateDiv{
+    margin-top: 5px;
+}
+#kjMobileDiv{
+    margin-top: 5px;
+}
+#kjAMobileDiv{
+    margin-top: 5px;
+}
+#kjAddtypeDiv{
+    margin-top: 5px;
+}
+
+#kjDefaultAddress{
+    height: 18px;
+    width: 250px;
+    /* border: 1px solid red; */
+    margin-left: 28.5%;
+    margin-top: 2%;
+    color: rgb(68, 55, 55);
+}
+#kjSaveAndContinue{
+   background-color: #e40046;
+   color: white;
+   border: none;
+   padding:5%;
+   width: 270px;
+   font-weight: 400;
+   margin-top: 30px;
+   font-size: 14px;
+}
+
+#kjrevieworder{
+    height: 6%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#kjrevieworder > p{
+    color: #cccccc;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+#kjMakePayment{
+    height: 6%;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#kjMakePayment > p{
+    color: #cccccc;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* <-------------------------rightSide Div-----------------------------> */
+
+
+
+
+#kjinsideof_KjcheckoutDivSecond{
+      height: 90%;
+      width: 90%;
+      /* border: 1px solid green; */
+      margin: 5%;
+}
+
+#kjsummaryDiv{
+    display: flex;
+    color: rgb(133, 133, 133);
+    font-size: 13px;
+    /* line-height: 18px; */
+    /* border: 1px solid black; */
+
+}
+
+#kjproductname{
+    font-size: 13px;
+    color: rgb(101, 101, 101);
+    width: 90%;
+    /* border: 1px solid red; */
+    /* line-height: 18px; */
+
+}
+#kjquantityDiv{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 90%;
+}
+#kjquantityDiv > div{
+    display: flex;
+    /* border: 1px solid greenyellow; */
+}
+#kjQuantityText{
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+
+}
+#kjQuantityTextNumber{
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+}
+#kjpricetext{
+    font-size: 13px;
+}
+#kjpricetexttext{
+    font-size: 13px;
+}
+#kjHrline{
+    border: 0.5px dashed rgb(202, 198, 198);
+}
+
+#kjTotalDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+#kjTotalDiv > div{
+    display: flex;
+
+}
+#kjTotalDiv > div > p{
+    margin-top: 0px;
+
+}
+#kjTotalText{
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+}
+#kjTotaltrsext{
+    font-size: 13px;
+
+}
+#kjTotalnumbertext{
+    font-size: 13px;
+}
+
+#KjdeliveryCharges{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 8%;
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+
+
+}
+#KjdeliveryCharges > p{
+    margin-top: 0px;
+}
+#KjdeliveryChargePrice{
+    font-size: 13px;
+    color: green;
+}
+#kjyoupay{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 15px;
+    font-weight: bold;
+}

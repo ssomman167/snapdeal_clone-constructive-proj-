@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shoping cart - Snapdeal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "https://i.pinimg.com/originals/b9/f3/79/b9f379dc190685c443ac37fdfee6a5dc.png" type = "image/x-icon">
+    <link rel="stylesheet" href="./lstyles/ogcart.css">
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./vstyle/headerfooter.css">
+    <link rel="stylesheet" href="./sstyle/signup.css">
+</head>
+<body>
+    <div id="lnavbar"></div>
+        <h1 class="vcenter">My Bag</h1>
+    <div class="vsideflex">
+        <div class="vleftside">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="vproductdet">PRODUCT</th>
+                        <th class="vtableall">PRICE</th>
+                        <th class="vtableall">QUANTITY</th>
+                        <th class="vtableall">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="vrightside">
+            <div class="xcheckoutdiv">
+                <h3>PRICE SUMMARY</h3>
+        
+                <h4>BAG TOTAL
+                ₹ <span id="lbag"></span></h4>
+                <p>Tax included and shipping calculated at checkout
+
+                </p>
+                <a><button id="lcheck-out" style="padding: 10px 30px;background-color: rgb(255, 0, 119);border: 1px solid transparent;color: white;font-weight: bold;">CHECK OUT</button></a>
+        </div>
+        </div>
+    </div>
+    <div id="lfooter" style="margin-top: 10%;"></div>
+
+
+
+
+</body>
+</html>
+<script src="ogcart.js"></script> 
+<script type="module">
+    import {Header,Footerone,FooterSecond} from "./component/header.js"
+    document.getElementById("lnavbar").innerHTML = Header()
+    document.getElementById("lfooter").innerHTML = Footerone()
+    showUser()
+    function showUser(){
+        let userData = JSON.parse(localStorage.getItem("userData")) || null;
+        if(userData){
+            document.getElementById("luser_name").innerHTML = userData.user.email.split("@")[0]
+            document.getElementById("lregister").innerHTML = null
+            document.getElementById("llogin").style.display="none"
+            document.getElementById("llogout").style.display="block"
+            document.getElementById("llogout").style.height="30%"
+        }
+    }
+</script>

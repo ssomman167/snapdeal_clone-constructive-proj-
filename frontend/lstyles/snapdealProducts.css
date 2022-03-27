@@ -1,0 +1,259 @@
+body{
+    background-color: rgb(247,247,247);
+    font-family: sans-serif;
+    margin: 0px;
+}
+#lbar,#lmain{
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
+}
+button{
+    padding: .5% 1.3%;
+    background: white;
+    border: 1px solid rgb(214, 212, 212);
+    margin-left: .6%;
+    border-radius: 3px;
+}
+#lmain{
+    display: flex;
+}
+#lsidebar{
+    flex: 1;
+}
+#lallproducts{
+    flex: 3.5;
+}
+.lbac{
+    background: white;
+    padding: 20px;
+    border: 1px solid rgb(247,247,247);
+}
+#llist,#lallproducts{
+    line-height: 25px;
+    padding: 20px;
+    padding-left: 0px;
+    background: white;
+    border: 1px solid rgb(247,247,247);
+}
+#llist li{
+    display: inline;
+}
+#lli{
+    display: flex;
+    justify-content: space-between;
+}
+#llist>ul>li::before{
+    content: "-";
+}
+#llist>ul>ul>li::before{
+    content: "-";
+}
+#lprice{
+    padding: 20px;
+    border: 1px solid rgb(247,247,247);
+}
+#lallproducts{
+    padding: 20px;
+}
+#lallproducts>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+    /* width: 40%; */
+}
+#lsearch{
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+    margin-top: -5px;
+    border-bottom: 2px solid red;
+    width: 160px;
+}
+.fas{
+    margin-top: 12px;
+}
+#lselect{
+    height: 35px;
+    margin-left: 40%;
+    margin-top: 15px;
+    border: 0.3px solid rgb(230, 223, 223);
+    padding: 0px 15px;
+}
+#lallproducts>div hr{
+    height: 30px;
+    margin-top: 0px;
+    border-top: 0.3px solid rgb(230, 223, 223);
+}
+#lchecks{
+    border: 1px solid transparent;
+    color: red;
+}
+#lpin{
+    border: 1px solid transparent;
+    width: 157px;
+    padding: 5px 15px;
+}
+#lproducts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+#linfoDiv{
+    line-height: 16px;
+}
+#linfoDiv>p:nth-child(1){
+    font-size: 15px;
+    color: rgb(90, 89, 89);
+}
+#lnone{
+    color: black;
+    display: none;
+}
+#lwishList{
+    text-align: right;
+    font-size: 17px;
+}
+#linprice{
+    font-size: 15px;
+    font-weight: bold;
+}
+/* #lstar{
+    display: none;
+} */
+#linProduct{
+    padding: 10px;
+}
+#linProduct:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.lslider{
+    /* -webkit-appearance: none; */
+    /* outline: none; */
+    width: 100%;
+    height: 2px;
+    /* transition: all 0.2s ease-out; */
+    /* position: absolute; */
+    background: #333;
+    border: medium none;
+    z-index: 2;
+}
+.lslider:hover{
+    cursor: pointer;
+}
+#lsliderdiv{
+    margin-top: 20px;
+    width: 100%;
+}
+.lmax,.lmin{
+    width: 13px;
+    height: 13px;
+    background: #333;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+    /* top: -6px; */
+    /* margin-left: 0px; */
+    /* border: medium none; */
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+}
+#lcheck{
+    margin-top: 12px;
+    margin-right: 10px;
+}
+#lcustRating{
+    padding: 20px;
+    border: 1px solid rgb(247,247,247);
+}
+hr{
+    border: .5px solid rgb(230, 227, 227);
+}
+#lindependence,#lcollar{
+    line-height: 25px;
+}
+#lbrand_search{
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+#lmodal{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.205);
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+#lbrand_box{
+    width: 40%;
+    height: 480px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* #lr{
+    width: 100%;
+    border: 1px solid red;
+} */
+#lmini_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.lclose{
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#lsizebtn{
+    border: 1px solid transparent;
+}
+#lsizeDiv{
+    visibility: hidden;
+    padding-top: 5px;
+    margin-top: 5px;
+    border-top: 1px solid rgb(211, 208, 208);
+}
+#linProduct:hover #lsizeDiv{
+    visibility: visible;
+}
+#lsizeDiv>button{
+    color: rgb(141, 138, 138);
+}
+#lallbrands p{
+    color: red;
+}
+.lbrand_name span{
+    font-size: 13px;
+    color: rgb(141, 138, 138);
+}
+.lbrand_name div{
+    line-height: 20px;
+}
+#lallbrands{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-content: space-around;
+}
+#lbarnd{
+    line-height: 25px;
+}
+#lpriceRange{
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+}
+#lmmm{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: rgb(139, 135, 135);
+}

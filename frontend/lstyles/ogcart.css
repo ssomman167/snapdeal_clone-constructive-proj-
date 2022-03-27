@@ -1,0 +1,134 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+}
+#vtop{
+    border: 1px solid black;
+    height: 150px;
+    /* width: 97%; */
+}
+.vcenter{
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+}
+.vsideflex{
+    display: flex;
+}
+.vleftside{
+    /* border: 1px solid black; */
+    width: 60%;
+    /* height: 200px; */
+    margin-left: 4%;
+}
+.vrightside{
+    /* border: 1px solid black; */
+    width: 30%;
+    /* height: 200px; */
+    margin-left: 25px;
+}
+
+.vproductdet{
+   /* padding: 5px 100px; */
+   width: 450px;
+}
+.vtableall{
+    width: 200px
+}
+
+th,td{
+    border: 1px solid black;
+}
+.xcheckoutdiv> button {
+    width: 250px;
+    height: 40px;
+   
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border: 1px solid black; */
+    background-color: black;
+    color: white;
+  }
+
+
+
+.vtopdata{
+    display: flex;
+    margin-bottom:45px;
+}
+
+.vtopdata > div{
+width: 25%;
+/* border: 1px solid black; */
+}
+h3{
+    margin: 0px;
+}
+.vselectinput{
+    width: 98%;
+    height: 32px;
+    margin-top: 3px;
+}
+.vinput{
+    width: 98%;
+    height: 27px;
+    margin-top: 3px;   
+}
+
+#xcal_shipp > button {
+    margin-top: 25px;
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+  }
+  .toppull{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border-color: ; */
+    /* border: 2px solid rgb(165, 165, 165); */
+
+  }
+  .legend{
+      text-align: center;
+  }
+#lin{
+    line-height: 20px;
+    font-size: 13px;
+    color: rgb(156, 156, 156);
+}
+#lsc{
+    color: rgb(156, 156, 156);
+}
+#lcol2{
+    text-align: center;
+}
+#lqntDiv{
+    width: 50%;
+    height: 30px;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    cursor: pointer;
+}
+/* #lqntDiv>div{
+    border: 1px solid red;
+} */
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+}
+
+  

@@ -1,0 +1,283 @@
+
+
+/* indivisual product page */
+
+*{
+    font-family: sans-serif;
+}
+.lbar{
+    width: 75%;
+    height: 40px;
+    margin: auto;
+    font-size: 13px;
+    color:#454545;
+}
+.lmainContainer{
+    width: 75%;
+    height: 800px;
+    margin: auto;
+    display: flex;
+}
+#limgContainer{
+    width: 48%;
+    height: 100%;
+}
+#linfoContainer{
+    width: 50%;
+    height: 100%;
+    margin-left: 2%;
+}
+#linfo{
+    width: 100%;
+    height: 30%;
+    line-height: 20px;
+}
+#lsize{
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+}
+#lcolor{
+    width: 100%;
+    height: 10%;
+}
+#lbutton{
+    width: 100%;
+    height: 6%;
+}
+#loffer{
+    width: 98%;
+    height: 13%;
+    border: 1px solid rgb(190, 188, 188);
+    margin-top: 2%;
+    line-height: 17px;
+    padding-left: 2%;
+}
+#lprice{
+    font-weight: bold;
+    font-size: 20px;
+}
+#lorgPrice{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #8f8f8f;
+}
+#loff{
+    color: red;
+    font-weight: bold;
+}
+#lbuy{
+    font-family: sans-serif;
+    padding: 2% 5%;
+    background-color: #d3d3d3;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+#lbuy:hover{
+    background-color: black;
+    color: white;
+}
+#lcart{
+    font-family: sans-serif;
+    padding: 2% 5%;
+    margin-left: 1%;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+#lLogo{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.fa-facebook-f:hover{
+    color: rgb(6, 29, 243);
+    zoom: 110%;
+}
+.fa-twitter:hover{
+    color: rgb(6, 168, 243);
+    zoom: 110%;
+}
+.fa-whatsapp:hover{
+    color: rgb(5, 255, 88);
+    zoom: 110%;
+}
+#lsizeButton{
+    padding: 1.5% 1.5%;
+    border-radius: 50%;
+    border: 1px solid rgb(212, 211, 211);
+    background: white;
+    margin-top: 1%;
+}
+#lsizeButton:hover{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+#lcol{
+    border-radius: 50%;
+    height: 86%;
+    width: 86%;
+    margin: 7% 7%;
+}
+#lcolDiv{
+    border: 2px solid black;
+    height: 35%;
+    width: 4%;
+    border-radius: 50%;
+}
+#laddFav{
+    padding: 1.35% 1.7%;
+    border: 1px solid black;
+    background: white;
+    margin-left: 1%;
+}
+.ladd{
+    font-size: 20px;
+}
+@media only screen and (min-width:376px) and (max-width:769px){
+    .lbar{
+        width: 100%;
+        height: 50px;
+    }
+    .lmainContainer{
+        width: 100%;
+        height: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #limgContainer{
+        width: 100%;
+    }
+    #linfoContainer{
+        width: 100%;
+        height: 130%;
+        margin-left: 0%;
+    }
+    #loffer{
+        height: 15%;
+    }
+}
+
+/* indivisual product footer */
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#vmainprod{
+    width: 98%;
+    display: flex;
+    padding: 10px;
+}
+
+.vleft{
+    width: 51%;
+}
+.vgrey{
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px 15px;
+}
+.vright{
+    width: 35%;
+    margin-left: 3%;
+}
+.vleft11{
+    display: flex;
+}
+.vleft11 > div{
+    padding: 0px 40px;    
+}
+.vborder{
+    border-bottom: 1px solid black;
+}
+.vsize3{
+    font-weight: lighter;
+    font-size: 16px;
+}
+.vseprate{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(31, 31, 31);
+}
+.vinput{
+    width: 65%;
+    height: 30px;
+    padding: 1px 10px;
+}
+.vbutton11{
+    margin-left: 10px;
+    width: 25%;
+    height: 36px;
+    border: 2px solid black;
+    background-color:  #fff;
+    cursor: pointer;
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.vdot{
+    /* border:1px solid black; */
+    /* height: 20px; */
+    padding: 25px 0px;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+}
+
+.lfoot{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+#ldiv{
+    height: 100%;
+    width: 19%;
+}
+#limgFoot{
+    height: 75%;
+    width: 100%;
+}
+#limgInfo{
+    height: 25%;
+    width: 100%;
+    line-height: 0px;
+}
+#lco{
+    height: 23px;
+    width: 26px;
+    background-color: #cecdcd;
+    padding-top: 1%;
+    border-radius: 50%;
+}
+#lcolo{
+    margin: auto;
+    height: 79%;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#lnam{
+    font-size: 15px;
+}
+#linf{
+    font-size: 12px;
+    line-height: 13px;
+    color: #777777;
+    font-weight: normal;
+}
+#lorgPric{
+    font-size: 12px;
+    text-decoration: line-through;
+    color:#989898;
+}
+#loffe{
+    color: red;
+}
+#lh{
+    text-align: center;
+}
